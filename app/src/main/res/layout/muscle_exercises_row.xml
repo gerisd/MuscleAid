@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:id="@+id/Muscle_Exercise_RelativeLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Muscle_Workout_Image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/Muscle_Workout_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Muscle_Workout_Image"
+            android:text="Exercise Name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@id/Muscle_Workout_Image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Muscle_Workout_Image"
+            android:layout_below="@+id/Muscle_Workout_Name"
+            android:text="Targeted Muscles:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/Muscle_Workout_Name"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/Muscle_TargetedMuscles_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Muscle_Workout_Image"
+            android:layout_below="@+id/Muscle_Workout_Name"
+            android:text="Targeted Muscles:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/Muscle_Workout_Name"
+            android:layout_marginTop="25dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

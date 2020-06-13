@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LoginBackground"
+    android:scrollbars="vertical">
+
+    <!-- LEGS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseLegs_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseLegs_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/legs_front"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseLegs_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legs"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseLegs_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@+id/ExerciseLegs_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="190dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- CHEST -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseChest_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseChest_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/chest"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseChest_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chest"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseChest_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseChest_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="179dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- BACK -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseBack_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseBack_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/back"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseBack_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseBack_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseBack_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="189dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- DELTOIDS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseDelts_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseDelts_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/deltoid_back"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseDelts_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deltoids"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseDelts_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseDelts_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="151dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- BICEPS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseBiceps_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseBiceps_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/bicep_front"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseBiceps_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biceps"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseBiceps_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseBiceps_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="168dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- TRICEPS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseTriceps_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseTriceps_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/tricep_front"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseTriceps_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Triceps"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseTriceps_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseTriceps_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="159dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- ABDOMINALS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseAbs_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseAbs_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/abdominal"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseAbs_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdominals"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseAbs_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseAbs_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="108dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- TRAPEZIUS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseTraps_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseTraps_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/trapezius"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseTraps_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trapezius"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseTraps_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseTraps_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="130dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- FOREARMS -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseForearms_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseForearms_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/forearm_front"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseForearms_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forearms"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseForearms_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseForearms_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="170dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- CALVES -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExerciseCalves_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/DarkRed"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ExerciseCalves_Image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="3dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/calves_back"
+                android:background="@drawable/exercise_circle_background"/>
+
+            <TextView
+                android:id="@+id/ExerciseCalves_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calves"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/ExerciseCalves_Image"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_toEndOf="@id/ExerciseCalves_Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="180dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

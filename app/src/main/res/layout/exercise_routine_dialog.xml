@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/DarkGrey2"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize Workout Routine "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ExerciseRoutine_DialogNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExerciseRoutine_DialogHeading"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:hint="Enter folder name"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogSplitInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExerciseRoutine_DialogNameInput"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="Select workout split"
+            android:textSize="18sp"
+            android:textColor="@color/White" />
+
+        <RadioGroup
+            android:id="@+id/RadioSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ExerciseRoutine_DialogSplitInput"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Radio_2day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Day Split"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/Radio_3day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Day Split"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/Radio_4day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Day Split"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/Radio_5day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Day Split"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogAction_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="OK"
+            android:textColor="@color/DialogButtonTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogAction_CANCEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:text="CANCEL"
+            android:textColor="@color/DialogButtonTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="1dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

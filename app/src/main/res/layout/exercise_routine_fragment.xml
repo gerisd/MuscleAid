@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/ExerciseRoutine_Recycler"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+    android:scrollbars="vertical"
+    android:padding="5dp">
+
+</android.support.v7.widget.RecyclerView>

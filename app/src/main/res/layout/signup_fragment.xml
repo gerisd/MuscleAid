@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/SignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:text="@string/sign_up"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Name Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/user_icon" />
+
+        <EditText
+            android:id="@+id/CreateUsernameInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:hint="Name" />
+
+    </LinearLayout>
+
+    <!-- Email Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/email" />
+
+        <EditText
+            android:id="@+id/CreateEmailInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:hint="Email" />
+
+    </LinearLayout>
+
+    <!-- Password Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/CreatePasswordInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <!-- Password Layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="210dp"
+        android:minHeight="50dp"
+        android:minWidth="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:src="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/ConfirmPasswordInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="16dp"
+        android:width="350dp"
+        android:text="@string/sign_up"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/signup_button_design" />
+
+
+</android.support.constraint.ConstraintLayout>

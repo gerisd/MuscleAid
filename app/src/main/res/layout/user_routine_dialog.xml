@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/DarkGrey2"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/UserRoutine_DialogHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the Split's Day Exercises"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserRoutine_DialogHeading"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/DialogLegsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Legs"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/DialogChestButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Chest"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogLegsButton"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/DialogBackButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Back"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogChestButton"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/DialogDeltsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Delts"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogBackButton"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/DialogAbsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Abs"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogDeltsButton"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/DialogCalvesButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Calves"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_below="@+id/DialogLegsButton"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/DialogTricepsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Triceps"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogCalvesButton"
+                android:layout_below="@id/DialogChestButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/DialogBicepsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Biceps"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogTricepsButton"
+                android:layout_below="@id/DialogBackButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/DialogTrapsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Traps"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogBicepsButton"
+                android:layout_below="@id/DialogDeltsButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/DialogForearmsButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dialog_button_unclicked"
+                android:text="Fore arms"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/DialogTrapsButton"
+                android:layout_below="@id/DialogAbsButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogAction_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="OK"
+            android:textColor="@color/DialogButtonTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/ExerciseRoutine_DialogAction_CANCEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:text="CANCEL"
+            android:textColor="@color/DialogButtonTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="1dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

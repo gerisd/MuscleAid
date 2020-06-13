@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical">
+
+    <!-- *******************FIRST ROW****************** -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center">
+
+        <!-- CHEST -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseChest_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseChest_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/chest"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chest"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseChest_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- BACK -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseBack_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ExerciseChest_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseBack_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseBack_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- LEGS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseLegs_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ExerciseBack_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseLegs_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/legs_front"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legs"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseLegs_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <!-- *******************SECOND ROW****************** -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <!-- BICEPS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseBiceps_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseBiceps_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/bicep_front"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biceps"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseBiceps_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- TRICEPS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseTriceps_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ExerciseBiceps_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseTriceps_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/tricep_front"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triceps"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseTriceps_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- DELTOIDS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseDelts_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ExerciseTriceps_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseDelts_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/deltoid_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deltoids"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseDelts_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <!-- *******************THIRD ROW****************** -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <!-- ABS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseAbs_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseAbs_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/abdominal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abs"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseAbs_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- FOREARMS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseForearms_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ExerciseAbs_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseForearms_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/forearm_front"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forearms"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseForearms_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- TRAPS -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseTraps_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ExerciseForearms_CardView"
+            android:layout_marginLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseTraps_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/trapezius"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trapezius"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseTraps_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+        <!-- CALVES -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ExerciseCalves_CardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ExerciseCalves_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="94dp"
+                    android:src="@drawable/calves_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calves"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/ExerciseCalves_Image"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="doova.fitgoal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".DisplayContacts"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".DisplayContacts_onClick"
+            android:parentActivityName=".DisplayContacts" />
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Exercise"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".UserRoutine"
+            android:parentActivityName=".Exercise" />
+        <activity
+            android:name=".UserExercises"
+            android:parentActivityName=".UserRoutine" />
+        <activity
+            android:name=".Exercise_NameList"
+            android:parentActivityName=".UserExercises" />
+
+        <!-- Muscle Workout Exercises -->
+        <activity
+            android:name=".Muscle_Exercises_Abs"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Back"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Biceps"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Calves"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Chest"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Delts"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Forearms"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Legs"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Traps"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Muscle_Exercises_Triceps"
+            android:parentActivityName=".Exercise_NameList" />
+        <activity
+            android:name=".Planner"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".Tab_Exercise_Progress"
+            android:label="@string/title_activity_tab__exercise__progress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tab_exercise_segment" />
+        <activity android:name=".Tab_Exercise_Segment" />
+        <activity android:name=".Tab_Progress_Segment"></activity>
+    </application>
+
+</manifest>

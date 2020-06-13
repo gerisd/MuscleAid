@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- HOMEPAGE CIRCLE BACKGROUND COLORS-->
+    <color name="HomePageBackgroundBlue">#0288D1</color>
+    <color name="HomePageBackgroundPurple">#673AB7</color>
+    <color name="HomePageBackgroundYellow">#FFD600</color>
+    <color name="HomePageBackgroundGreen">#00796B</color>
+
+    <!-- PURPOSE SPECIFIC COLORS -->
+    <color name="DBdislay">#BDBDBD</color>
+    <color name="ActionBar">#393939</color>
+    <color name="ExerciseRoutine">#787878</color>
+    <color name="DialogButtonTextBlue">#33bbff</color>
+    <color name="DialogButtonTextRed">#F44336</color>
+
+    <!-- COLORS USED THROUGHOUT THE APPLICATION BUILD -->
+    <color name="LoginBackground">#2b2b2b</color>
+    <color name="DarkRed">#B71C1C</color>
+    <color name="DarkGrey">#393939</color>
+    <color name="DarkGrey2">#2f2f2f</color>
+    <color name="Grey">#424242</color>
+    <color name="LightGrey">#9E9E9E</color>
+    <color name="White">#FFFFFF</color>
+
+</resources>

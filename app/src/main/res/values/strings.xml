@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fit Goal</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t Have an Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="id">ID</string>
+    <string name="email">Email</string>
+    <string name="title_activity_tab__exercise__progress">Tab_Exercise_Progress</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
